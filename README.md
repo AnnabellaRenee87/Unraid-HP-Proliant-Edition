@@ -22,8 +22,8 @@ It is recommended to compile this in a **dedicated** folder, preferably on a cac
 mkdir -p /mnt/cache/.rmrr
 cd /mnt/cache/.rmrr
 wget https://raw.githubusercontent.com/AnnabellaRenee87/Unraid-HP-Proliant-Edition/master/build_script/kernel_compile.sh
-chmod +x kernel-compile.sh
-./kernel-compile.sh
+chmod +x kernel_compile.sh
+./kernel_compile.sh
 ```
 
 A new bzimage file is then compiled with the RMRR patch applied.
