@@ -2,7 +2,7 @@
 
 ##Cleanup any old files before starting
 rm -rf ${D}/kernel
-rm \
+rm -f \
   FILE_LIST_CURRENT \
   linux-*.tar.xz \
   variables.sh \
