@@ -15,7 +15,6 @@ set -ea
 
 ##Pull variables from github
 wget -nc https://raw.githubusercontent.com/linuxserver/Unraid-Dependencies/${DEPENDENCY_BRANCH}/build_scripts/variables.sh
-wget -nc https://raw.githubusercontent.com/linuxserver/Unraid-Dependencies/${DEPENDENCY_BRANCH}/build_scripts/dvb-variables.sh
 
 source ./variables.sh
 
@@ -23,8 +22,6 @@ if [[ -z "$D" ]]; then
     echo "Must provide D in environment" 1>&2
     exit 1
 fi
-
-source ${D}/dvb-variables.sh
 
 ##Grab Slackware packages
 echo -e "${BLUE}Kernel Compile Module${NC}    -----    Install packages"
