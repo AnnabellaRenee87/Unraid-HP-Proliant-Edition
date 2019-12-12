@@ -46,7 +46,7 @@ cd ${D}
 ##Download and Install Kernel
 echo -e "${BLUE}Kernel Compile Module${NC}    -----    Download and Install Kernel"
 [[ $(uname -r) =~ ([0-9.]*) ]] &&  KERNEL=${BASH_REMATCH[1]} || return 1
-  LINK="https://www.kernel.org/pub/linux/kernel/v5.x/linux-${KERNEL}.tar.xz"
+  LINK="https://www.kernel.org/pub/linux/kernel/v4.x/linux-${KERNEL}.tar.xz"
   rm -rf ${D}/kernel; mkdir ${D}/kernel
   [[ ! -f ${D}/linux-${KERNEL}.tar.xz ]] && wget $LINK -O ${D}/linux-${KERNEL}.tar.xz
   tar -C ${D}/kernel --strip-components=1 -Jxf ${D}/linux-${KERNEL}.tar.xz
