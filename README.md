@@ -1,3 +1,6 @@
+# DEPRECIATED, please use the new method outlined here!
+https://forums.unraid.net/topic/100919-currentnew-unraid-hp-proliant-edition-rmrr-error-patching/
+
 # Unraid HP Proliant Edition
 
 ## Introduction
